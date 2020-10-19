@@ -3,7 +3,8 @@ import React from 'react'
 import Seo from '../components/Seo'
 import LayoutBasic from '../layouts/LayoutBasic'
 import './index.scss'
-import Image from '../components/Image'
+import ImagenDinamic from '../components/ImagenDinamic'
+
 
 export default function Index() {
   return (
@@ -13,7 +14,15 @@ export default function Index() {
       <Button variant="primary" size="lg" block>
         Block level button
       </Button>
-      <Image />
+      {/* DEbemos enviar props para que el componete imagen pueda ser dinamico */}
+      <ImagenDinamic 
+        fileName="cafe3.jpg"
+        alt="Taza de café"
+      />
+      <ImagenDinamic 
+        fileName="gatsby-astronaut.png"
+        alt="astronauta"
+      />
     </LayoutBasic>
   )
 }
