@@ -3,6 +3,7 @@ import React from 'react'
 import Seo from '../components/Seo'
 import LayoutBasic from '../layouts/LayoutBasic'
 import './index.scss'
+import Image from '../components/Image'
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
       <Button variant="primary" size="lg" block>
         Block level button
       </Button>
+      <Image />
     </LayoutBasic>
   )
 }
