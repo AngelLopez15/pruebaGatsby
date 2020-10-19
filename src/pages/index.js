@@ -4,7 +4,7 @@ import Seo from '../components/Seo'
 import LayoutBasic from '../layouts/LayoutBasic'
 import './index.scss'
 import ImagenDinamic from '../components/ImagenDinamic'
-
+import {ReactComponent as IconYoutube} from '../images/svg/youtube.svg'
 
 export default function Index() {
   return (
@@ -14,15 +14,16 @@ export default function Index() {
       <Button variant="primary" size="lg" block>
         Block level button
       </Button>
-      {/* DEbemos enviar props para que el componete imagen pueda ser dinamico */}
+      <IconYoutube />
+      {/* Debemos enviar props para que el componete imagen pueda ser dinamico */}
       <ImagenDinamic 
         fileName="cafe3.jpg"
         alt="Taza de café"
       />
-      <ImagenDinamic 
+      {/* <ImagenDinamic 
         fileName="gatsby-astronaut.png"
         alt="astronauta"
-      />
+      />  */}
     </LayoutBasic>
   )
 }
